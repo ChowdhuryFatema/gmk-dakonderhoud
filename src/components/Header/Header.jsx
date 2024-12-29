@@ -342,17 +342,6 @@ export default () => {
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
         <div className="keen-slider__slide number-slide7"
           style={{
             backgroundImage: `url(${img7})`,
@@ -418,8 +407,7 @@ export default () => {
             <div className="w-[300px] md:w-[400px] lg:w-[494px]">
               <h3 className="hidden lg:flex text-center mb-5 lg:mb-8 text-xl md:text-3xl lg:text-5xl font-extrabold">Vraag hieronder <br /> een offerte op</h3>
 
-
-              <div className="border border-[#D9D9D9] rounded-lg p-5 mt-10 md:mt-32">
+              <div className="border border-[#D9D9D9] rounded-lg p-5 mt-10 md:mt-32 lg:mt-0">
 
                 <div>
                   <h5 className="font-semibold text-base text-white lg:text-[#1E1E1E]">Name</h5>
@@ -441,7 +429,6 @@ export default () => {
                   Submit
                 </button>
               </div>
-
 
             </div>
           </div>
