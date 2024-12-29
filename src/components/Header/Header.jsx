@@ -61,8 +61,7 @@ export default () => {
     <>
       <div ref={sliderRef} className="keen-slider">
 
-
-        {/* <div
+        <div
           className="keen-slider__slide number-slide1"
           style={{
             backgroundImage: `url(${img1})`,
@@ -175,12 +174,9 @@ export default () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
-
-
-
-        {/* <div className="keen-slider__slide number-slide2"
+        <div className="keen-slider__slide number-slide2"
           style={{
             backgroundImage: `url(${img2})`,
             backgroundSize: "cover",
@@ -210,17 +206,9 @@ export default () => {
             </div>
 
           </div>
-        </div> */}
+        </div>
 
-
-
-
-
-
-
-
-
-        {/* <div className="keen-slider__slide number-slide3"
+        <div className="keen-slider__slide number-slide3"
           style={{
             backgroundImage: `url(${img3})`,
             backgroundSize: "cover",
@@ -249,10 +237,9 @@ export default () => {
             </div>
 
           </div>
-        </div> */}
+        </div>
 
-
-        {/* <div className="keen-slider__slide number-slide4"
+        <div className="keen-slider__slide number-slide4"
           style={{
             backgroundImage: `url(${img4})`,
             backgroundSize: "cover",
@@ -280,11 +267,9 @@ export default () => {
             </div>
 
           </div>
-        </div> */}
+        </div>
 
-
-
-        {/* <div className="keen-slider__slide number-slide5"
+        <div className="keen-slider__slide number-slide5"
           style={{
             backgroundImage: `url(${img5})`,
             backgroundSize: "cover",
@@ -323,10 +308,7 @@ export default () => {
             </div>
 
           </div>
-        </div> */}
-
-
-
+        </div>
 
         <div className="keen-slider__slide number-slide6"
           style={{
@@ -337,33 +319,30 @@ export default () => {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
-            <div className="pl-12 pt-12">
+            <div className="pl-5 md:pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
               <img src={logo} alt="" />
             </div>
 
-            <div className="absolute bottom-20 left-14">
-              <h2 className="text-[#F9F6F2] text-6xl leading-[70px] mb-7">
-                Wij bieden een <br />
-                duurzame en passende <br />
-                oplossing voor uw klus.
-              </h2>
-            </div>
-
-            <div className="absolute bottom-20 right-20 w-2/5">
-              <p className="text-[#E7E7E7] text-xl text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className="flex justify-end">
-                <button className="bg-[#1677FF] rounded-full w-64 h-12 mt-6"></button>
+            <div className="absolute bottom-20 md:bottom-10 lg:bottom-20 lg:left-14 md:left-10 left-5">
+              <div className="lg:flex justify-between">
+                <h2 className="text-[#F9F6F2] text-xl md:text-2xl lg:text-6xl lg:leading-[70px] lg:mb-7 mb-5">
+                  Wij bieden een <br />
+                  duurzame en passende <br />
+                  oplossing voor uw klus.
+                </h2>
+                <div className="w-4/5 lg:w-2/4 mr-20">
+                  <p className="text-[#E7E7E7] text-sm md:text-lg lg:text-xl text-left lg:text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div className="flex justify-end">
+                    <button className="bg-[#1677FF] hidden lg:block rounded-full w-64 h-12 mt-6"></button>
+                  </div>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
 
-
-
-
-        {/* <div className="keen-slider__slide number-slide7"
+        <div className="keen-slider__slide number-slide7"
           style={{
             backgroundImage: `url(${img7})`,
             backgroundSize: "cover",
@@ -372,46 +351,44 @@ export default () => {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
-            <div className="pl-12 pt-12">
+            <div className="pl-5 md:pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
               <img src={logo} alt="" />
             </div>
 
-            <div className="absolute bottom-20 left-14">
-              <h2 className="text-[#F9F6F2] text-6xl leading-[70px] mb-7">
-                Wij bieden een <br />
-                duurzame en passende <br />
-                oplossing voor uw klus.
-              </h2>
-            </div>
-
-            <div className="absolute bottom-20 right-20 w-2/5">
-              <p className="text-[#E7E7E7] text-xl text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className="flex justify-end">
-                <button className="bg-[#1677FF] rounded-full w-64 h-12 mt-6"></button>
+            <div className="absolute bottom-20 md:bottom-10 lg:bottom-20 lg:left-14 md:left-10 left-5">
+              <div className="lg:flex justify-between">
+                <h2 className="text-[#F9F6F2] text-xl md:text-2xl lg:text-6xl lg:leading-[70px] lg:mb-7 mb-5">
+                  Wij bieden een <br />
+                  duurzame en passende <br />
+                  oplossing voor uw klus.
+                </h2>
+                <div className="w-4/5 lg:w-2/4 mr-20">
+                  <p className="text-[#E7E7E7] text-sm md:text-lg lg:text-xl text-left lg:text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div className="flex justify-end">
+                    <button className="bg-[#1677FF] hidden lg:block rounded-full w-64 h-12 mt-6"></button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
-
-
-
-        {/* <div className="keen-slider__slide number-slide9">
+        <div className="keen-slider__slide number-slide9">
           <div
+            className="w-full lg:w-3/4"
             style={{
-              width: "75%",
               backgroundImage: `url(${img9})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           >
-            <div className="absolute inset-0 bg-black bg-opacity-50 w-[60%]"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-50 w-full lg:w-[60%]"></div>
             <div className="relative z-10 h-screen max-w-[1920px] mx-auto">
-              <div className="pl-12 pt-12">
+              <div className="pl-5 md:pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
                 <img src={logo} alt="" />
               </div>
-              <div className="flex justify-center items-center h-[85vh]">
+              <div className="hidden lg:flex justify-center items-center h-[85vh]">
                 <div className="w-3/4">
                   <h2 className="text-[#F9F6F2] text-xl">
                     Uw adres
@@ -426,44 +403,38 @@ export default () => {
               </div>
             </div>
           </div>
+          <div className="absolute md:left-10 left-5 lg:relative z-10 lg:w-1/2 flex flex-col items-center justify-center h-screen">
+            <div className="w-[300px] md:w-[400px] lg:w-[494px]">
+              <h3 className="hidden lg:flex text-center mb-5 lg:mb-8 text-xl md:text-3xl lg:text-5xl font-extrabold">Vraag hieronder <br /> een offerte op</h3>
 
 
+              <div className="border border-[#D9D9D9] rounded-lg p-5 mt-10 md:mt-32">
 
-
-
-
-
-
-
-          <div className="w-1/2 flex flex-col items-center justify-center h-screen">
-            <div className="w-[494px]">
-              <h3 className="text-center mb-8 text-5xl font-extrabold">Vraag hieronder <br /> een offerte op</h3>
-              <div className="border border-[#D9D9D9] rounded-lg p-5">
                 <div>
-                  <h5 className="font-semibold text-base">Name</h5>
-                  <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full px-4 py-3 rounded-lg mt-2" />
+                  <h5 className="font-semibold text-base text-white lg:text-[#1E1E1E]">Name</h5>
+                  <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full lg:px-4 lg:py-3 px-2 py-1 rounded-lg lg:mt-2" />
                 </div>
-                <div className="mt-6">
-                  <h5 className="font-semibold text-base">Surname</h5>
-                  <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full px-4 py-3 rounded-lg mt-2" />
+                <div className="lg:mt-6">
+                  <h5 className="font-semibold text-base text-white lg:text-[#1E1E1E]">Surname</h5>
+                  <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full lg:px-4 lg:py-3 px-2 py-1 rounded-lg lg:mt-2" />
                 </div>
-                <div className="mt-6">
-                  <h5 className="font-semibold text-base">Email</h5>
-                  <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full px-4 py-3 rounded-lg mt-2" />
+                <div className="lg:mt-6">
+                  <h5 className="font-semibold text-base text-white lg:text-[#1E1E1E]">Email</h5>
+                  <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full lg:px-4 lg:py-3 px-2 py-1 rounded-lg lg:mt-2" />
                 </div>
-                <div className="mt-6">
-                  <h5 className="font-semibold text-base">Message</h5>
-                  <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full px-4 py-3 rounded-lg mt-2" />
+                <div className="lg:mt-6">
+                  <h5 className="font-semibold text-base text-white lg:text-[#1E1E1E]">Message</h5>
+                  <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full lg:px-4 lg:py-3 px-2 py-1 rounded-lg lg:mt-2" />
                 </div>
-                <button className="bg-[#11162E] text-white w-full rounded-lg mt-6 p-3 font-bold text-base">
+                <button className="bg-[#11162E] text-white w-full rounded-lg mt-3 lg:mt-6 p-1 lg:p-3 font-bold text-base">
                   Submit
                 </button>
               </div>
 
+
             </div>
           </div>
-        </div> */}
-
+        </div>
 
       </div>
     </>
