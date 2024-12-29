@@ -11,7 +11,7 @@ body {
     align-items: start !important;
     justify-content: start !important;
     min-height: 100vh !important;
-    max-height: 100vh;
+    /* height: 100%; */
   }
 
 

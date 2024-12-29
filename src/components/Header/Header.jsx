@@ -26,34 +26,34 @@ export default () => {
       loop: true,
     },
     [
-      (slider) => {
-        let timeout
-        let mouseOver = false
-        function clearNextTimeout() {
-          clearTimeout(timeout)
-        }
-        function nextTimeout() {
-          clearTimeout(timeout)
-          if (mouseOver) return
-          timeout = setTimeout(() => {
-            slider.next()
-          }, 2000)
-        }
-        slider.on("created", () => {
-          slider.container.addEventListener("mouseover", () => {
-            mouseOver = true
-            clearNextTimeout()
-          })
-          slider.container.addEventListener("mouseout", () => {
-            mouseOver = false
-            nextTimeout()
-          })
-          nextTimeout()
-        })
-        slider.on("dragStarted", clearNextTimeout)
-        slider.on("animationEnded", nextTimeout)
-        slider.on("updated", nextTimeout)
-      },
+      // (slider) => {
+      //   let timeout
+      //   let mouseOver = false
+      //   function clearNextTimeout() {
+      //     clearTimeout(timeout)
+      //   }
+      //   function nextTimeout() {
+      //     clearTimeout(timeout)
+      //     if (mouseOver) return
+      //     timeout = setTimeout(() => {
+      //       slider.next()
+      //     }, 2000)
+      //   }
+      //   slider.on("created", () => {
+      //     slider.container.addEventListener("mouseover", () => {
+      //       mouseOver = true
+      //       clearNextTimeout()
+      //     })
+      //     slider.container.addEventListener("mouseout", () => {
+      //       mouseOver = false
+      //       nextTimeout()
+      //     })
+      //     nextTimeout()
+      //   })
+      //   slider.on("dragStarted", clearNextTimeout)
+      //   slider.on("animationEnded", nextTimeout)
+      //   slider.on("updated", nextTimeout)
+      // },
     ]
   )
 
@@ -61,8 +61,8 @@ export default () => {
     <>
       <div ref={sliderRef} className="keen-slider">
 
-        
-        <div
+
+        {/* <div
           className="keen-slider__slide number-slide1"
           style={{
             backgroundImage: `url(${img1})`,
@@ -71,14 +71,14 @@ export default () => {
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-          <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
+          <div className="relative z-10 w-screen h-full max-w-[1920px] mx-auto">
 
-            <div className="pl-12 pt-12">
-              <img src={logo} alt="" />
+            <div className="pl-5 md:pl-12 pt-5 md:pt-12">
+              <img className="w-[280px] h-[40px] md:w-[413px] md:h-[60px] object-cover" src={logo} alt="" />
             </div>
 
             <div className="absolute top-[50%] -translate-y-[50%]">
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-evenly w-full pl-96">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-evenly w-full pl-5 md:pl-12 lg:pl-96 gap-5">
                 <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6">
                   <div className="flex flex-col items-end flex-1">
                     <h5 className="text-[#000000] font-semibold text-xl">Fermin Vargas</h5>
@@ -97,7 +97,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="flex my-4">
+              <div className="hidden lg:flex my-4">
                 <div>
                   <img src={line} alt="" />
                   <div className="flex justify-end">
@@ -136,7 +136,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="grid sm:grid-cols-1 md:grid-cols-3 justify-between w-full pl-12">
+              <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between w-full md:pl-12">
                 <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6">
                   <div className="flex flex-col items-end flex-1">
                     <h5 className="text-[#000000] font-semibold text-xl">Fermin Vargas</h5>
@@ -151,7 +151,7 @@ export default () => {
                   </div>
                   <img className="object-cover w-[107px] h-[97px] rounded-r-2xl" src={avatar} alt="" />
                 </div>
-                <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6 ml-48">
+                <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6 ml-48 mt-10 lg:mt-0">
                   <div className="flex flex-col items-end flex-1">
                     <h5 className="text-[#000000] font-semibold text-xl">Fermin Vargas</h5>
                     <p className="text-[#78858F] text-base text-right">Construction <br /> manager</p>
@@ -162,20 +162,20 @@ export default () => {
             </div>
 
             <div className="absolute left-12 bottom-12">
-              <div className="flex items-center gap-8">
-                <img className="object-cover w-[186px] h-[63px]" src={icon1} alt="" />
-                <img className="object-cover w-[59px] h-[79px]" src={icon2} alt="" />
-                <img className="object-cover w-[115px] h-[48px]" src={icon3} alt="" />
+              <div className="flex items-center gap-3">
+                <img className="object-cover  w-[100px] h-[43px] md:w-[186px] md:h-[63px]" src={icon1} alt="" />
+                <img className="object-cover  w-[45px] h-[59px] md:w-[62px] md:h-[79px]" src={icon2} alt="" />
+                <img className="object-cover w-[100px] h-[38px] md:w-[115px] md:h-[48px]" src={icon3} alt="" />
               </div>
             </div>
 
             <div className="absolute right-0 bottom-12">
-              <div className="flex items-center gap-8">
-                <img className="object-cover w-[463px] h-[157px]" src={hand} alt="" />
+              <div className="hidden md:flex items-center gap-8">
+                <img className="object-cover w-[293px] h-[95px] lg:w-[463px] lg:h-[157px]" src={hand} alt="" />
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
 
@@ -189,24 +189,24 @@ export default () => {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
-            <div className="pl-12 pt-12">
-              <img src={logo} alt="" />
+            <div className="pl-5 lg:pl-12 pt-5 lg:pt-12">
+              <img className="w-[280px] h-[40px] md:w-[413px] md:h-[60px] object-cover" src={logo} />
             </div>
 
-            <div className="absolute bottom-20 left-14">
-              <div className="w-2/5">
-                <h2 className="text-[#F9F6F2] text-6xl leading-[70px] mb-7">
+            <div className="absolute bottom-20 lg:left-14 left-5 md:pr-20 pr-10">
+              <div className="w-full lg:w-2/5">
+                <h2 className="text-[#F9F6F2] text-2xl md:text-4xl lg:text-6xl lg:leading-[70px] mb-7">
                   Wij bieden een <br />
                   duurzame en passende <br />
                   oplossing voor uw klus.
                 </h2>
-                <p className="text-[#E7E7E7] text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                <p className="text-[#E7E7E7] text-sm md:text-base lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
 
             <div className="absolute bottom-20 right-20">
-              <button className="bg-[#1677FF] rounded-full w-64 h-12"></button>
+              <button className="bg-[#1677FF] hidden lg:block rounded-full w-64 h-12"></button>
             </div>
 
           </div>
@@ -219,7 +219,7 @@ export default () => {
 
 
 
-
+        {/* 
         <div className="keen-slider__slide number-slide3"
           style={{
             backgroundImage: `url(${img3})`,
@@ -249,10 +249,10 @@ export default () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
 
-        <div className="keen-slider__slide number-slide4"
+        {/* <div className="keen-slider__slide number-slide4"
           style={{
             backgroundImage: `url(${img4})`,
             backgroundSize: "cover",
@@ -280,11 +280,11 @@ export default () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
 
 
-        <div className="keen-slider__slide number-slide5"
+        {/* <div className="keen-slider__slide number-slide5"
           style={{
             backgroundImage: `url(${img5})`,
             backgroundSize: "cover",
@@ -323,12 +323,12 @@ export default () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
 
 
 
-        <div className="keen-slider__slide number-slide6"
+        {/* <div className="keen-slider__slide number-slide6"
           style={{
             backgroundImage: `url(${img6})`,
             backgroundSize: "cover",
@@ -358,12 +358,12 @@ export default () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
 
 
 
-        <div className="keen-slider__slide number-slide7"
+        {/* <div className="keen-slider__slide number-slide7"
           style={{
             backgroundImage: `url(${img7})`,
             backgroundSize: "cover",
@@ -392,12 +392,12 @@ export default () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
 
 
-        <div className="keen-slider__slide number-slide9">
+        {/* <div className="keen-slider__slide number-slide9">
           <div
             style={{
               width: "75%",
@@ -462,7 +462,7 @@ export default () => {
 
             </div>
           </div>
-        </div>
+        </div> */}
 
 
       </div>
