@@ -180,7 +180,7 @@ export default () => {
 
 
 
-        <div className="keen-slider__slide number-slide2"
+        {/* <div className="keen-slider__slide number-slide2"
           style={{
             backgroundImage: `url(${img2})`,
             backgroundSize: "cover",
@@ -195,7 +195,7 @@ export default () => {
 
             <div className="absolute bottom-20 lg:left-14 left-5 md:pr-20 pr-10">
               <div className="w-full lg:w-2/5">
-                <h2 className="text-[#F9F6F2] text-2xl md:text-4xl lg:text-6xl lg:leading-[70px] mb-7">
+                <h2 className="text-[#F9F6F2] text-xl md:text-2xl lg:text-6xl lg:leading-[70px] lg:mb-7 mb-5">
                   Wij bieden een <br />
                   duurzame en passende <br />
                   oplossing voor uw klus.
@@ -210,7 +210,7 @@ export default () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
 
 
@@ -219,8 +219,8 @@ export default () => {
 
 
 
-        {/* 
-        <div className="keen-slider__slide number-slide3"
+
+        {/* <div className="keen-slider__slide number-slide3"
           style={{
             backgroundImage: `url(${img3})`,
             backgroundSize: "cover",
@@ -229,22 +229,22 @@ export default () => {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
-            <div className="pr-16 pt-12 text-right flex justify-end gap-8 items-center">
-              <h4 className="text-white text-4xl">GMK Dakonderhoud</h4>
-              <img src={logoIcon} alt="" />
+            <div className="pr-10 lg:pr-16 pt-5 lg:pt-12 text-right flex justify-end gap-4 lg:gap-8 items-center">
+              <h4 className="text-white text-xl md:text-2xl lg:text-4xl">GMK Dakonderhoud</h4>
+              <img className="w-9" src={logoIcon} alt="" />
             </div>
 
-            <div className="absolute bottom-28 right-16">
+            <div className="absolute bottom-20 lg:bottom-28 right-10 lg:right-16">
 
-              <h2 className="text-[#F9F6F2] text-6xl leading-[70px] mb-7 text-right">
+              <h2 className="text-[#F9F6F2] text-xl md:text-2xl lg:text-6xl lg:leading-[70px] lg:mb-7 mb-5 text-right">
                 Wij bieden een <br />
                 duurzame en passende <br />
                 oplossing voor uw klus.
               </h2>
               <div className="flex flex-col items-end">
-                <p className="text-[#E7E7E7] text-xl text-right w-2/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                <p className="text-[#E7E7E7] text-sm md:text-base lg:text-xl text-right w-full md:w-4/5 lg:w-2/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button className="bg-[#1677FF] rounded-full w-64 h-12 mt-8"></button>
+                <button className="bg-[#1677FF] hidden lg:block rounded-full w-64 h-12 mt-8"></button>
               </div>
             </div>
 
@@ -261,21 +261,21 @@ export default () => {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
-            <div className="pl-12 pt-12">
+            <div className="pl-5 md:pl-12 pt-5 md:pt-12 w-4/5 md:w-full">
               <img src={logo} alt="" />
             </div>
 
-            <div className="absolute bottom-28 right-16">
+            <div className="absolute bottom-20 lg:bottom-28 md:right-16 right-10">
 
-              <h2 className="text-[#F9F6F2] text-6xl leading-[70px] mb-7 text-right">
+              <h2 className="text-[#F9F6F2] text-xl md:text-2xl lg:text-6xl lg:leading-[70px] lg:mb-7 mb-5 text-right">
                 Wij bieden een <br />
                 duurzame en passende <br />
                 oplossing voor uw klus.
               </h2>
               <div className="flex flex-col items-end">
-                <p className="text-[#E7E7E7] text-xl text-right w-2/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                <p className="text-[#E7E7E7] text-sm md:text-base lg:text-xl text-right w-11/12 md:w-4/5 lg:w-2/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button className="bg-[#1677FF] rounded-full w-64 h-12 mt-8"></button>
+                <button className="bg-[#1677FF] hidden lg:block rounded-full w-64 h-12 mt-8"></button>
               </div>
             </div>
 
@@ -293,14 +293,14 @@ export default () => {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
-            <div className="pl-12 pt-12">
+            <div className="pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
               <img src={logo} alt="" />
             </div>
 
-            <div className="absolute left-20 top-[50%] -translate-y-[50%]">
-              <div className="flex gap-32 items-center">
+            <div className="absolute left-10 lg:left-20 top-[50%] md:top-[60%] lg:top-[50%] -translate-y-[50%]">
+              <div className="lg:flex gap-32 items-center">
                 <div>
-                  <h2 className="text-[#F9F6F2] text-6xl leading-[70px] mb-7">
+                  <h2 className="text-[#F9F6F2] text-xl md:text-2xl lg:text-6xl lg:leading-[70px] lg:mb-7 mb-5">
                     Wij bieden een <br />
                     duurzame en passende <br />
                     oplossing voor uw klus.
@@ -308,7 +308,7 @@ export default () => {
                 </div>
 
 
-                <div className="w-2/5">
+                <div className="w-4/5 lg:w-2/5">
                   <h2 className="text-[#F9F6F2] text-xl">
                     Uw adres
                   </h2>
@@ -317,7 +317,7 @@ export default () => {
                     gebruiken om een optimaal beeld te vormen van uw dak.
                   </p>
                   <input type="text" placeholder="Singel 63 1012VD Amsterdam"
-                    className="rounded w-full border border-[#D9D9D9] p-4" />
+                    className="rounded w-full border border-[#D9D9D9] px-2 p-1 lg:p-4" />
                 </div>
               </div>
             </div>
@@ -328,7 +328,7 @@ export default () => {
 
 
 
-        {/* <div className="keen-slider__slide number-slide6"
+        <div className="keen-slider__slide number-slide6"
           style={{
             backgroundImage: `url(${img6})`,
             backgroundSize: "cover",
@@ -358,7 +358,7 @@ export default () => {
             </div>
 
           </div>
-        </div> */}
+        </div>
 
 
 
