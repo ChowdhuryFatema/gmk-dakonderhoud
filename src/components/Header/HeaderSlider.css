@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+    display: flex;
+    align-items: start !important;
+    justify-content: start !important;
+    min-height: 100vh !important;
+    max-height: 100vh;
+  }
+
+
+  
+
+  
+
+
+  
