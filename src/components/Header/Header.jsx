@@ -26,34 +26,34 @@ export default () => {
       loop: true,
     },
     [
-      // (slider) => {
-      //   let timeout
-      //   let mouseOver = false
-      //   function clearNextTimeout() {
-      //     clearTimeout(timeout)
-      //   }
-      //   function nextTimeout() {
-      //     clearTimeout(timeout)
-      //     if (mouseOver) return
-      //     timeout = setTimeout(() => {
-      //       slider.next()
-      //     }, 2000)
-      //   }
-      //   slider.on("created", () => {
-      //     slider.container.addEventListener("mouseover", () => {
-      //       mouseOver = true
-      //       clearNextTimeout()
-      //     })
-      //     slider.container.addEventListener("mouseout", () => {
-      //       mouseOver = false
-      //       nextTimeout()
-      //     })
-      //     nextTimeout()
-      //   })
-      //   slider.on("dragStarted", clearNextTimeout)
-      //   slider.on("animationEnded", nextTimeout)
-      //   slider.on("updated", nextTimeout)
-      // },
+      (slider) => {
+        let timeout
+        let mouseOver = false
+        function clearNextTimeout() {
+          clearTimeout(timeout)
+        }
+        function nextTimeout() {
+          clearTimeout(timeout)
+          if (mouseOver) return
+          timeout = setTimeout(() => {
+            slider.next()
+          }, 2000)
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true
+            clearNextTimeout()
+          })
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false
+            nextTimeout()
+          })
+          nextTimeout()
+        })
+        slider.on("dragStarted", clearNextTimeout)
+        slider.on("animationEnded", nextTimeout)
+        slider.on("updated", nextTimeout)
+      },
     ]
   )
 
@@ -72,12 +72,12 @@ export default () => {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-full max-w-[1920px] mx-auto">
 
-            <div className="pl-5 md:pl-12 pt-5 md:pt-12">
+            <div className="pl-10 md:pl-12 pt-5 md:pt-12">
               <img className="w-[280px] h-[40px] md:w-[413px] md:h-[60px] object-cover" src={logo} alt="" />
             </div>
 
             <div className="absolute top-[50%] -translate-y-[50%]">
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-evenly w-full pl-5 md:pl-12 lg:pl-96 gap-5">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-evenly w-full pl-10 md:pl-12 lg:pl-96 gap-5">
                 <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6">
                   <div className="flex flex-col items-end flex-1">
                     <h5 className="text-[#000000] font-semibold text-xl">Fermin Vargas</h5>
@@ -185,11 +185,11 @@ export default () => {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
-            <div className="pl-5 lg:pl-12 pt-5 lg:pt-12">
+            <div className="pl-10 lg:pl-12 pt-5 lg:pt-12">
               <img className="w-[280px] h-[40px] md:w-[413px] md:h-[60px] object-cover" src={logo} />
             </div>
 
-            <div className="absolute bottom-20 lg:left-14 left-5 md:pr-20 pr-10">
+            <div className="absolute bottom-20 lg:left-14 left-10 md:pr-20 pr-10">
               <div className="w-full lg:w-2/5">
                 <h2 className="text-[#F9F6F2] text-xl md:text-2xl lg:text-6xl lg:leading-[70px] lg:mb-7 mb-5">
                   Wij bieden een <br />
@@ -319,11 +319,11 @@ export default () => {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
-            <div className="pl-5 md:pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
+            <div className="pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
               <img src={logo} alt="" />
             </div>
 
-            <div className="absolute bottom-20 md:bottom-10 lg:bottom-20 lg:left-14 md:left-10 left-5">
+            <div className="absolute bottom-20 md:bottom-10 lg:bottom-20 lg:left-14 left-10">
               <div className="lg:flex justify-between">
                 <h2 className="text-[#F9F6F2] text-xl md:text-2xl lg:text-6xl lg:leading-[70px] lg:mb-7 mb-5">
                   Wij bieden een <br />
@@ -342,6 +342,17 @@ export default () => {
           </div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
         <div className="keen-slider__slide number-slide7"
           style={{
             backgroundImage: `url(${img7})`,
@@ -351,11 +362,11 @@ export default () => {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 w-screen h-screen max-w-[1920px] mx-auto">
-            <div className="pl-5 md:pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
+            <div className="pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
               <img src={logo} alt="" />
             </div>
 
-            <div className="absolute bottom-20 md:bottom-10 lg:bottom-20 lg:left-14 md:left-10 left-5">
+            <div className="absolute bottom-20 md:bottom-10 lg:bottom-20 lg:left-14 left-10">
               <div className="lg:flex justify-between">
                 <h2 className="text-[#F9F6F2] text-xl md:text-2xl lg:text-6xl lg:leading-[70px] lg:mb-7 mb-5">
                   Wij bieden een <br />
@@ -385,7 +396,7 @@ export default () => {
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 w-full lg:w-[60%]"></div>
             <div className="relative z-10 h-screen max-w-[1920px] mx-auto">
-              <div className="pl-5 md:pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
+              <div className="pl-10 lg:pl-12 pt-5 md:pt-12 w-4/5 lg:w-full">
                 <img src={logo} alt="" />
               </div>
               <div className="hidden lg:flex justify-center items-center h-[85vh]">
@@ -403,7 +414,7 @@ export default () => {
               </div>
             </div>
           </div>
-          <div className="absolute md:left-10 left-5 lg:relative z-10 lg:w-1/2 flex flex-col items-center justify-center h-screen">
+          <div className="absolute left-10 lg:relative z-10 lg:w-1/2 flex flex-col items-center justify-center h-screen">
             <div className="w-[300px] md:w-[400px] lg:w-[494px]">
               <h3 className="hidden lg:flex text-center mb-5 lg:mb-8 text-xl md:text-3xl lg:text-5xl font-extrabold">Vraag hieronder <br /> een offerte op</h3>
 

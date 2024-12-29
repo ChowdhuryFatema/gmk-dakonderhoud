@@ -13,7 +13,7 @@ function App() {
       <div>
         <Header />
         <OverOns />
-        {/* <OverOnsSlider /> */}
+        <OverOnsSlider />
         <OnsWerk />
         <GMK />
         <Footer />
