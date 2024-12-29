@@ -10,7 +10,7 @@ import icon3 from '../../assets/icon(3).png';
 const OverOns = () => {
     return (
         <div className='px-5'>
-            <h2 className='text-[#11162E] text-5xl mt-10 md:mt-20 my-5 md:text-7xl lg:text-[330px] font-extrabold text-center uppercase'>OVER ONS</h2>
+            <h2 className='text-[#11162E] text-5xl mt-10 md:mt-20 my-5 md:text-7xl lg:text-[330px] text-center uppercase'>OVER ONS</h2>
             <div className='max-w-[1920px] md:px-12 mx-auto'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-40 gap-0'>
                     <div>
