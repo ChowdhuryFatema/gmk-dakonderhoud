@@ -61,8 +61,7 @@ export default () => {
     <>
       <div ref={sliderRef} className="keen-slider">
 
-        <div
-          className="keen-slider__slide number-slide1"
+        <div className="keen-slider__slide number-slide1"
           style={{
             backgroundImage: `url(${img1})`,
             backgroundSize: "cover",
@@ -80,16 +79,16 @@ export default () => {
               <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-evenly w-full pl-10 md:pl-12 lg:pl-96 gap-5">
                 <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6">
                   <div className="flex flex-col items-end flex-1">
-                    <h5 className="text-[#000000] font-semibold text-xl">Fermin Vargas</h5>
-                    <p className="text-[#78858F] text-base text-right">Construction <br /> manager</p>
+                    <h5 className="text-[#000000] font-semibold text-base md:text-xl">Fermin Vargas</h5>
+                    <p className="text-[#78858F] text-sm md:text-base text-right">Construction <br /> manager</p>
                   </div>
 
                   <img className="object-cover w-[107px] h-[97px] rounded-r-2xl" src={avatar} alt="" />
                 </div>
                 <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6">
                   <div className="flex flex-col items-end flex-1">
-                    <h5 className="text-[#000000] font-semibold text-xl">Fermin Vargas</h5>
-                    <p className="text-[#78858F] text-base text-right">Construction <br /> manager</p>
+                    <h5 className="text-[#000000] font-semibold text-base md:text-xl">Fermin Vargas</h5>
+                    <p className="text-[#78858F] text-sm md:text-base text-right">Construction <br /> manager</p>
                   </div>
 
                   <img className="object-cover w-[107px] h-[97px] rounded-r-2xl" src={avatar} alt="" />
@@ -410,19 +409,19 @@ export default () => {
               <div className="border border-[#D9D9D9] rounded-lg p-5 mt-10 md:mt-32 lg:mt-0">
 
                 <div>
-                  <h5 className="font-semibold text-base text-white lg:text-[#1E1E1E]">Name</h5>
+                  <h5 className="font-normal md:font-semibold text-sm lg:text-base text-white lg:text-[#1E1E1E] mt-2">Name</h5>
                   <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full lg:px-4 lg:py-3 px-2 py-1 rounded-lg lg:mt-2" />
                 </div>
                 <div className="lg:mt-6">
-                  <h5 className="font-semibold text-base text-white lg:text-[#1E1E1E]">Surname</h5>
+                  <h5 className="font-normal md:font-semibold text-sm lg:text-base text-white lg:text-[#1E1E1E] mt-2">Surname</h5>
                   <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full lg:px-4 lg:py-3 px-2 py-1 rounded-lg lg:mt-2" />
                 </div>
                 <div className="lg:mt-6">
-                  <h5 className="font-semibold text-base text-white lg:text-[#1E1E1E]">Email</h5>
+                  <h5 className="font-normal md:font-semibold text-sm lg:text-base text-white lg:text-[#1E1E1E] mt-2">Email</h5>
                   <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full lg:px-4 lg:py-3 px-2 py-1 rounded-lg lg:mt-2" />
                 </div>
                 <div className="lg:mt-6">
-                  <h5 className="font-semibold text-base text-white lg:text-[#1E1E1E]">Message</h5>
+                  <h5 className="font-normal md:font-semibold text-sm lg:text-base text-white lg:text-[#1E1E1E] mt-2">Message</h5>
                   <input type="text" placeholder="Value" className="border border-[#D9D9D9] w-full lg:px-4 lg:py-3 px-2 py-1 rounded-lg lg:mt-2" />
                 </div>
                 <button className="bg-[#11162E] text-white w-full rounded-lg mt-3 lg:mt-6 p-1 lg:p-3 font-bold text-base">
